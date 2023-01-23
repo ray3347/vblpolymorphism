@@ -26,9 +26,9 @@ public class Main {
 					if(petCount.getName().contains(select)) {
 						temp=0;
 						Play play = new Play(petCount.getName(),petCount.getHappiness(), petCount.getHealth(), petCount.getCleaness());
-						petCount.setHappiness(play.setHappiness());
-						petCount.setHealth(play.setHealth());
-						petCount.setCleaness(play.setCleaness());
+						petCount.setHappiness(play.getHappiness());
+						petCount.setHealth(play.getHealth());
+						petCount.setCleaness(play.getCleaness());
 						System.out.println(petCount.getName() + " Has Played");
 						confirm();
 					}
@@ -48,9 +48,9 @@ public class Main {
 					if(petCount.getName().contains(select)) {
 						temp=0;
 						Eat eat = new Eat(petCount.getName(),petCount.getHappiness(), petCount.getHealth(), petCount.getCleaness());
-						petCount.setHappiness(eat.setHappiness());
-						petCount.setHealth(eat.setHealth());
-						petCount.setCleaness(eat.setCleaness());
+						petCount.setHappiness(eat.getHappiness());
+						petCount.setHealth(eat.getHealth());
+						petCount.setCleaness(eat.getCleaness());
 						System.out.println(petCount.getName() + " Has Eaten");
 						confirm();
 					}
@@ -69,9 +69,9 @@ public class Main {
 					if(petCount.getName().contains(select)) {
 						temp=0;
 						Bath bath = new Bath(petCount.getName(),petCount.getHappiness(), petCount.getHealth(), petCount.getCleaness());
-						petCount.setHappiness(bath.setHappiness());
-						petCount.setHealth(bath.setHealth());
-						petCount.setCleaness(bath.setCleaness());
+						petCount.setHappiness(bath.getHappiness());
+						petCount.setHealth(bath.getHealth());
+						petCount.setCleaness(bath.getCleaness());
 						System.out.println(petCount.getName() + " Has Bathed");
 						confirm();
 					}
